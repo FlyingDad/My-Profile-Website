@@ -1,0 +1,68 @@
+// Susy setup
+$susy: (
+	columns: 12,
+	gutters: 1/6,
+	global-box-sizing: border-box
+);
+
+.wrap {
+	@include container(80%);
+}
+
+.site-branding {
+	@include susy-breakpoint($medium) {
+		@include span(1);
+	}
+}
+
+.header-nav {
+	@include susy-breakpoint($medium) {
+		@include span(10);
+		padding-top: 23px;
+	}
+}
+
+.features {
+	@include clearfix;
+}
+
+// .features .feature {
+
+// 	@include susy-breakpoint($medium $large - 1) {
+// 		@include span(6);
+
+// 		&:nth-of-type(even) {
+// 			@include last;
+// 		}
+// 	}
+
+// 	@include susy-breakpoint($large) {
+// 		@include span(3);
+
+// 		&:last-child {
+// 			@include last;
+// 		}
+// 	}
+// }
+
+.site-inner {
+	padding-top: 30px;
+}
+
+.content {
+
+	@include susy-breakpoint($large) {
+		@include span(8);
+	}
+}
+
+.sidebar {
+	text-align: center;
+	@include susy-breakpoint($large) {
+		@include span(4);
+		@include last;
+	}
+	img {
+		padding-top: 30px;
+	}
+}

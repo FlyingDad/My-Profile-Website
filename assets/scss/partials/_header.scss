@@ -1,0 +1,30 @@
+.site-header {
+	background-color: $blue;
+	text-align: center;
+	line-height: 1;
+}
+
+.site-title {
+	color: $orange;
+}
+
+.site-branding {
+	img{
+		font-family: $roboto;
+		height: 40px;
+		padding: 10px 0;
+	}
+}
+
+.header-nav {
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $orange;
+		font-size: 14px;
+	}
+}

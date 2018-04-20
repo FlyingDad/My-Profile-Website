@@ -1,0 +1,17 @@
+.hero .overlay {
+	background: rgba($blue, .85);
+}
+
+.hero {
+	text-align: center;
+	p {
+		color: $lightblue;
+		font-weight: 100;
+	}
+}
+
+.hero .wrap {
+	padding: 40px 0;
+	color: $white;
+}
+
