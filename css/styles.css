@@ -398,13 +398,22 @@ a {
     margin-right: 1.2048192771%;
     padding-top: 22px; } }
 
+.badges {
+  position: relative;
+  background: #190127;
+  text-align: center; }
+  .badges ul {
+    margin-top: 0;
+    -webkit-padding-start: 0; }
+  .badges li {
+    color: #ff9f1c;
+    display: inline;
+    padding: 0 20px; }
+
 .features::after {
   clear: both;
   content: "";
   display: block; }
-
-.site-inner {
-  padding-top: 30px; }
 
 @media (min-width: 960px) {
   .content {
