@@ -9,16 +9,16 @@ $susy: (
 	@include container(80%);
 }
 
-.site-branding {
-	@include susy-breakpoint($medium) {
-		@include span(1);
-	}
-}
+// .site-branding {
+// 	@include susy-breakpoint($medium) {
+// 		@include span(1);
+// 	}
+// }
 
 .header-nav {
 	@include susy-breakpoint($medium) {
 		@include span(10);
-		padding-top: 23px;
+		padding-top: 22px;
 	}
 }
 

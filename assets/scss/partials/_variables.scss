@@ -5,7 +5,7 @@
 // $blue: rgba(20, 8, 77, 1);
 // $gray: rgba(78, 78, 78, 1);
 //$header-footer: rgb(70, 71, 126);
-$blue: rgba(1, 22, 39, 1);
+$blue: rgb(25, 1, 39);
 $white: rgba(253, 255, 252, 1);
 $lightblue: rgba(46, 196, 182, 1);
 $red: rgba(231, 29, 54, 1);
@@ -19,3 +19,6 @@ $default-border-radius: 20px;
 $small: 480px;
 $medium: 640px;
 $large: 960px;
+
+$link-color: $orange;
+$link-hover:#00aedb;

@@ -9,22 +9,34 @@
 }
 
 .site-branding {
+	position: relative;
 	img{
-		font-family: $roboto;
-		height: 40px;
-		padding: 10px 0;
+		//display: inline;
+		float: left;
+		width: 90px;
+		padding: 10px 20px;
 	}
 }
 
-.header-nav {
-
-	ul {
-		margin: 0;
-		padding: 0;
+.site-nav {
+	position: absolute;
+	//text-align: center;
+	//float: left;
+	ul{
+		-webkit-padding-start: 0;
 	}
-
-	a {
-		color: $orange;
-		font-size: 14px;
-	}
+	
+	font-size: 14px;
 }
+// .header-nav {
+
+// 	ul {
+// 		margin: 0;
+// 		padding: 0;
+// 	}
+
+// 	a {
+// 		color: $orange;
+// 		font-size: 14px;
+// 	}
+// }
