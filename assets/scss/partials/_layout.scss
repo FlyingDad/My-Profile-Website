@@ -9,12 +9,6 @@ $susy: (
 	@include container(80%);
 }
 
-// .site-branding {
-// 	@include susy-breakpoint($medium) {
-// 		@include span(1);
-// 	}
-// }
-
 .header-nav {
 	@include susy-breakpoint($medium) {
 		@include span(10);
@@ -23,9 +17,7 @@ $susy: (
 }
 
 .badges {
-	position: relative;
-	//top: 0;
-	
+
 	background: $blue;
 	text-align: center;
 	ul {
@@ -34,7 +26,7 @@ $susy: (
 	}
 	li {
 		
-		color: $orange;
+		color: darken($orange, 20);
 		display: inline;
 		padding: 0 20px;
 	}
@@ -61,9 +53,25 @@ $susy: (
 // 		}
 // 	}
 // }
+#edu-header {
+	padding-bottom: 30px;
+	//color: brown;
+	svg {
+		padding-left: 20px;
+	}
+}
+
+
+.education {
+	line-height: .5;
+	h3 {
+		color: $lightblue;
+	}
+}
 
 .site-inner {
 	//padding-top: 10px;
+	//background: rgb(174, 199, 245);
 }
 
 .content {
@@ -74,12 +82,14 @@ $susy: (
 }
 
 .sidebar {
+	color: darken($lightblue, 20);
 	text-align: center;
 	@include susy-breakpoint($large) {
 		@include span(4);
 		@include last;
 	}
-	img {
+	img, svg {
 		padding-top: 30px;
+		max-width: 140px;
 	}
 }

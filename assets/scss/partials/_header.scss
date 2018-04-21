@@ -1,31 +1,32 @@
-.site-header {
-	background-color: $blue;
-	text-align: center;
-	line-height: 1;
-}
+// .site-header {
+// 	background-color: $blue;
+// 	text-align: center;
+// 	line-height: 1;
+// }
 
 .site-title {
 	color: $orange;
 }
 
 .site-branding {
-	position: relative;
 	img{
-		//display: inline;
-		float: left;
+		float: left;		
 		width: 90px;
-		padding: 10px 20px;
+		margin: 12px 20px;
 	}
 }
 
 .site-nav {
 	position: absolute;
-	//text-align: center;
-	//float: left;
 	ul{
 		-webkit-padding-start: 0;
+	}	
+	.active {
+		color: $lightblue;
+		&:hover {
+			color: lighten($lightblue, 35);
+		}
 	}
-	
 	font-size: 14px;
 }
 
