@@ -2,7 +2,7 @@
 VARIABLES
 **********************/
 $link-color:$orange;
-$link-hover:lighten($lightblue, 35);
+$link-hover:$lightblue;
 $link-vertical-padding:20px;      /*Controls Menu top & bottom padding*/
 $link-horizontal-padding:5px;    /*Contols Menu left & right padding*/
 $menu-background: #353535;        /*Control Menu Color Scheme*/
@@ -68,12 +68,12 @@ nav ul {
       text-decoration:none;
       //border-right:1px solid darken($menu-background,10%);
       text-shadow:2px 2px 2px rgba(0,0,0,.8);
-      transition: all 0.1s ease;
+      transition: all 0.4s ease-in-out;
       
       &:hover {
         //background:darken($menu-background,10%);
         color:$link-hover;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease-out;
       }
 
       @include navbreakpoint(760) {

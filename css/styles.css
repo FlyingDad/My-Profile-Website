@@ -412,11 +412,13 @@ a {
   content: "";
   display: block; }
 
-#edu-header, #ios-header, #web-header {
+#edu-header, #ios-header {
   padding-bottom: 30px;
   color: #190127; }
-  #edu-header svg, #ios-header svg, #web-header svg {
+  #edu-header svg, #ios-header svg {
     padding-left: 20px; }
+  #edu-header p, #ios-header p {
+    font-style: italic; }
 
 #education {
   line-height: .5; }
@@ -486,37 +488,52 @@ a {
   width: 50%; }
 
 .web-inner {
-  border: 3px solid blue;
+  color: white;
+  background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
+  padding-left: 20px;
+  border: 1px solid #b3b3b3;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 4px #e6e6e6; }
   .web-inner:after {
     content: " ";
     display: block;
     clear: both; }
 
 .web-description {
-  padding-bottom: 40px;
-  background: hotpink; }
+  padding-bottom: 40px; }
   @media (min-width: 640px) {
     .web-description {
-      width: 32.5301204819%;
+      width: 40.9638554217%;
       float: left;
       margin-right: 1.2048192771%; } }
+  .web-description h3 {
+    font-size: 1.4em; }
+  .web-description p {
+    font-size: .85em; }
 
 .web-image {
-  background: lightgreen;
   color: #1b7169; }
   @media (min-width: 640px) {
     .web-image {
-      width: 49.3975903614%;
+      width: 57.8313253012%;
       float: left;
       margin-right: 1.2048192771%;
       float: right;
       margin-right: 0; } }
   .web-image img, .web-image svg {
-    padding-top: 30px;
-    max-width: 200px; }
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 260px;
+    border-radius: 4px; }
+    @media only screen and (max-width: 400px) {
+      .web-image img, .web-image svg {
+        width: 210px;
+        margin-left: 0; } }
 
 .hero .overlay {
   background: rgba(25, 1, 39, 0.85); }
@@ -581,10 +598,10 @@ nav ul {
       color: #ff9f1c;
       text-decoration: none;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-      transition: all 0.1s ease; }
+      transition: all 0.4s ease-in-out; }
       nav ul li a:hover {
-        color: #b7eee9;
-        transition: all 0.2s ease; }
+        color: #2ec4b6;
+        transition: all 0.3s ease-out; }
       @media (max-width: 760px) {
         nav ul li a {
           display: table;
@@ -642,7 +659,7 @@ nav ul {
           text-shadow: none;
           transition: all 0.2s ease; }
           nav ul li ul li a:hover {
-            color: #b7eee9;
+            color: #2ec4b6;
             background: #424242;
             transition: all 0.5s ease; }
           @media (max-width: 760px) {
