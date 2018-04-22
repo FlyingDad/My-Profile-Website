@@ -396,11 +396,12 @@ a {
     padding-top: 22px; } }
 
 .badges {
-  background: #190127;
+  background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
   text-align: center; }
   .badges ul {
     margin-top: 0;
-    -webkit-padding-start: 0; }
+    -webkit-padding-start: 0;
+    box-shadow: 0 4px 2px #032730; }
   .badges li {
     color: #b56800;
     display: inline;
@@ -411,15 +412,25 @@ a {
   content: "";
   display: block; }
 
-#edu-header {
-  padding-bottom: 30px; }
-  #edu-header svg {
+#edu-header, #ios-header, #web-header {
+  padding-bottom: 30px;
+  color: #190127; }
+  #edu-header svg, #ios-header svg, #web-header svg {
     padding-left: 20px; }
 
-.education {
+#education {
   line-height: .5; }
-  .education h3 {
+  #education h3 {
     color: #2ec4b6; }
+
+.degree {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05em; }
+
+.site-inner {
+  color: #190127;
+  padding-bottom: 20px; }
 
 @media (min-width: 960px) {
   .content {
@@ -440,6 +451,72 @@ a {
   .sidebar img, .sidebar svg {
     padding-top: 30px;
     max-width: 140px; }
+
+.ios-inner {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .ios-inner:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.ios-description {
+  padding-bottom: 40px; }
+  @media (min-width: 640px) {
+    .ios-description {
+      width: 32.5301204819%;
+      float: left;
+      margin-right: 1.2048192771%; } }
+
+.ios-image {
+  color: #1b7169; }
+  @media (min-width: 640px) {
+    .ios-image {
+      width: 57.8313253012%;
+      float: left;
+      margin-right: 1.2048192771%;
+      float: right;
+      margin-right: 0; } }
+  .ios-image img, .ios-image svg {
+    padding-top: 30px;
+    max-width: 200px; }
+
+#ios-hr {
+  width: 50%; }
+
+.web-inner {
+  border: 3px solid blue;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .web-inner:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.web-description {
+  padding-bottom: 40px;
+  background: hotpink; }
+  @media (min-width: 640px) {
+    .web-description {
+      width: 32.5301204819%;
+      float: left;
+      margin-right: 1.2048192771%; } }
+
+.web-image {
+  background: lightgreen;
+  color: #1b7169; }
+  @media (min-width: 640px) {
+    .web-image {
+      width: 49.3975903614%;
+      float: left;
+      margin-right: 1.2048192771%;
+      float: right;
+      margin-right: 0; } }
+  .web-image img, .web-image svg {
+    padding-top: 30px;
+    max-width: 200px; }
 
 .hero .overlay {
   background: rgba(25, 1, 39, 0.85); }

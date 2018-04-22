@@ -18,11 +18,12 @@ $susy: (
 
 .badges {
 
-	background: $blue;
+	background: linear-gradient(180deg, $blue 0%, $blueHighlight 70%, $blueHighlight 100%);
 	text-align: center;
 	ul {
 		margin-top: 0;
 		-webkit-padding-start: 0;
+		box-shadow: 0 4px 2px $blueHighlight;
 	}
 	li {
 		
@@ -35,42 +36,34 @@ $susy: (
 	@include clearfix;
 }
 
-// .features .feature {
-
-// 	@include susy-breakpoint($medium $large - 1) {
-// 		@include span(6);
-
-// 		&:nth-of-type(even) {
-// 			@include last;
-// 		}
-// 	}
-
-// 	@include susy-breakpoint($large) {
-// 		@include span(3);
-
-// 		&:last-child {
-// 			@include last;
-// 		}
-// 	}
-// }
-#edu-header {
+#edu-header, #ios-header, #web-header {
 	padding-bottom: 30px;
-	//color: brown;
+	color: $blue;
 	svg {
 		padding-left: 20px;
 	}
 }
 
-
-.education {
+#education {
+	
 	line-height: .5;
 	h3 {
 		color: $lightblue;
 	}
 }
 
+.degree {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1.05em;
+}
+
 .site-inner {
-	//padding-top: 10px;
+	//background: rgb(170, 198, 240);
+  //background: linear-gradient(136deg, purple 0%, red 100%);
+	color: $blue;
+	//color: lighten($lightblue, 30);
+	padding-bottom: 20px;
 	//background: rgb(174, 199, 245);
 }
 
@@ -91,5 +84,65 @@ $susy: (
 	img, svg {
 		padding-top: 30px;
 		max-width: 140px;
+	}
+}
+
+.ios-inner {
+	//border: 3px solid blue;
+	@include container
+}
+.ios-description {
+	padding-bottom: 40px;
+	//background: hotpink;
+	//border: 2px solid red;
+	@include susy-breakpoint($medium) {
+		@include span(4);
+	}
+}
+
+.ios-image {
+	//background: lightgreen;
+	//border: 2px solid green;
+	color: darken($lightblue, 20);
+	//text-align: center;
+	@include susy-breakpoint($medium) {
+		@include span(7);
+		@include last;
+	}
+	img, svg {
+		padding-top: 30px;
+		max-width: 200px;
+	}
+}
+
+#ios-hr {
+	width: 50%;
+}
+
+.web-inner {
+	border: 3px solid blue;
+	@include container
+}
+.web-description {
+	padding-bottom: 40px;
+	background: hotpink;
+	//border: 2px solid red;
+	@include susy-breakpoint($medium) {
+		@include span(4);
+	}
+}
+
+.web-image {
+	background: lightgreen;
+	//border: 2px solid green;
+	color: darken($lightblue, 20);
+	//text-align: center;
+	@include susy-breakpoint($medium) {
+		@include span(6);
+		@include last;
+	}
+	img, svg {
+		padding-top: 30px;
+		max-width: 200px;
 	}
 }
