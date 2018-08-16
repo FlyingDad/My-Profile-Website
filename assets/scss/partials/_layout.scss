@@ -1,39 +1,38 @@
 // Susy setup
-$susy: (
-	columns: 12,
-	gutters: 1/6,
-	global-box-sizing: border-box
-);
+// $susy: (
+// 	columns: 12,
+// 	gutters: 1/6,
+// 	global-box-sizing: border-box
+// );
 
-.wrap {
-	@include container(80%);
-}
+
 
 .header-nav {
-	@include susy-breakpoint($medium) {
-		@include span(10);
-		padding-top: 22px;
-	}
+	// @include susy-breakpoint($medium) {
+	// 	@include span(10);
+	// 	padding-top: 22px;
+	// }
 }
 
 .badges {
 
-	background: linear-gradient(180deg, $blue 0%, $blueHighlight 70%, $blueHighlight 100%);
+	background: linear-gradient(180deg, rgb(255, 0, 200) 0%, rgb(79, 54, 190) 20%, rgb(3, 3, 95) 80%);
 	text-align: center;
 	ul {
 		margin-top: 0;
+		padding-top: 8px;
 		-webkit-padding-start: 0;
-		box-shadow: 0 4px 2px $blueHighlight;
+		box-shadow: 0 6px 10px rgba(255, 0, 191, 0.3);
 	}
 	li {
 		
-		color: darken($orange, 20);
+		color: darken($orange, 1);
 		display: inline;
 		padding: 0 20px;
 	}
 }
 .features {
-	@include clearfix;
+	// @include clearfix;
 }
 
 #edu-header, #ios-header, {
@@ -61,29 +60,43 @@ $susy: (
 	font-size: 1.05em;
 }
 
+
+
 .site-inner {
+	
 	//background: rgb(170, 198, 240);
   //background: linear-gradient(136deg, purple 0%, red 100%);
-	color: $blue;
+	color: rgb(189, 57, 241);
 	//color: lighten($lightblue, 30);
 	padding-bottom: 20px;
 	//background: rgb(174, 199, 245);
 }
 
-.content {
+.wrap {
+	// @include container(70%);
+	//border: 1px solid rgb(0, 113, 128);
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 auto;
+	width: 80%;
+}
 
-	@include susy-breakpoint($large) {
-		@include span(8);
-	}
+.content {
+	//border: 1px solid green;
+	flex-grow: 3;
+	margin-right: 30px;
+	// @include susy-breakpoint($large) {
+	// 	@include span(8);
+	//}
 }
 
 .sidebar {
 	color: darken($lightblue, 20);
 	text-align: center;
-	@include susy-breakpoint($large) {
-		@include span(4);
-		@include last;
-	}
+	// @include susy-breakpoint($large) {
+	// 	@include span(4);
+	// 	@include last;
+	// }
 	img, svg {
 		padding-top: 30px;
 		max-width: 140px;
@@ -92,15 +105,15 @@ $susy: (
 
 .ios-inner {
 	//border: 3px solid blue;
-	@include container
+	//@include container
 }
 .ios-description {
 	padding-bottom: 40px;
 	//background: hotpink;
 	//border: 2px solid red;
-	@include susy-breakpoint($medium) {
-		@include span(4);
-	}
+	// @include susy-breakpoint($medium) {
+	// 	@include span(4);
+	// }
 }
 
 .ios-image {
@@ -108,10 +121,10 @@ $susy: (
 	//border: 2px solid green;
 	color: darken($lightblue, 20);
 	//text-align: center;
-	@include susy-breakpoint($medium) {
-		@include span(7);
-		@include last;
-	}
+	// @include susy-breakpoint($medium) {
+	// 	@include span(7);
+	// 	@include last;
+	// }
 	img, svg {
 		padding-top: 30px;
 		max-width: 200px;
@@ -124,23 +137,29 @@ $susy: (
 
 
 .web-inner {
+	//@include container;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
 	color: white;
 	background: linear-gradient(180deg, $blue 0%, $blueHighlight 70%, $blueHighlight 100%);
 	padding-left: 20px;
-	border: 1px solid lighten(gray, 20);
-	@include container;
+	border: 1px solid lighten(rgb(0, 255, 149), 30);
 	margin-bottom: 20px;
 	border-radius: 4px;
-	box-shadow: 2px 4px 4px lighten(gray, 40);
+	box-shadow: 2px 3px 6px lighten(rgb(6, 95, 110), 1);
 }
 
 .web-description {
 	padding-bottom: 40px;
+	margin-right: 20px;
+	flex-grow: 2;
 	//background: hotpink;
-	//border: 2px solid red;
-	@include susy-breakpoint($medium) {
-		@include span(5);
-	}
+	// border: 2px solid red;
+	// @include susy-breakpoint($medium) {
+	// 	@include span(5);
+	// }
 	h3 {
 		font-size: 1.4em; 
 	}
@@ -153,22 +172,24 @@ $susy: (
 	//background: lightgreen;
 	//border: 2px solid green;
 	color: darken($lightblue, 20);
-	//text-align: center;
+	text-align: right;
 	
-	@include susy-breakpoint($medium) {
-		@include span(7);
-		@include last;
-	}
+	// @include susy-breakpoint($medium) {
+	// 	@include span(7);
+	// 	@include last;
+	// }
 	
 	img, svg {
 		padding: 0;
 		margin-top: 10px;
 		margin-left: 20px;
+		margin-right: 20px;
 		max-width: 260px;
 		border-radius: 4px;
-		@media only screen and (max-width: 400px) {	
-			width: 210px;
-			margin-left: 0;		
-		}
+
+		// @media only screen and (max-width: 750px) {	
+		// 	width: 210px;
+		// 	// margin-left: 0;		
+		// }
 	}
 }

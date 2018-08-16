@@ -303,7 +303,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  font-weight: 300; }
+  font-weight: 300;
+  background: #04042e; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -332,9 +333,9 @@ nav a {
 
 a {
   text-decoration: none;
-  color: #2ec4b6; }
+  color: #19dfcb; }
   a:hover {
-    color: #ff9f1c; }
+    color: #ff9500; }
 
 .site-footer {
   color: orange;
@@ -350,7 +351,7 @@ a {
   padding: 0; }
 
 .social-menu a {
-  color: #2ec4b6; }
+  color: #19dfcb; }
   .social-menu a:before {
     font-family: FontAwesome;
     padding-right: 5px; }
@@ -362,7 +363,7 @@ a {
     content: '\f0e1'; }
 
 .site-title {
-  color: #ff9f1c; }
+  color: #ff9500; }
 
 .site-branding img {
   float: left;
@@ -375,42 +376,36 @@ a {
   .site-nav ul {
     -webkit-padding-start: 0; }
   .site-nav .active {
-    color: #2ec4b6; }
+    color: #19dfcb; }
     .site-nav .active:hover {
-      color: #b7eee9; }
+      color: #b4f7f0; }
 
-.wrap {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
-  .wrap:after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-@media (min-width: 640px) {
-  .header-nav {
-    width: 83.1325301205%;
-    float: left;
-    margin-right: 1.2048192771%;
-    padding-top: 22px; } }
+.header-wrap {
+  color: white;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 80%; }
+  .header-wrap h1 {
+    margin-bottom: 0; }
+  .header-wrap h2 {
+    font-size: 1.2em;
+    margin-top: 0; }
 
 .badges {
-  background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
+  background: linear-gradient(180deg, #ff00c8 0%, #4f36be 20%, #03035f 80%);
   text-align: center; }
   .badges ul {
     margin-top: 0;
+    padding-top: 8px;
     -webkit-padding-start: 0;
-    box-shadow: 0 4px 2px #032730; }
+    box-shadow: 0 6px 10px rgba(255, 0, 191, 0.3); }
   .badges li {
-    color: #b56800;
+    color: #fa9200;
     display: inline;
     padding: 0 20px; }
-
-.features::after {
-  clear: both;
-  content: "";
-  display: block; }
 
 #edu-header, #ios-header {
   padding-bottom: 30px;
@@ -423,7 +418,7 @@ a {
 #education {
   line-height: .5; }
   #education h3 {
-    color: #2ec4b6; }
+    color: #19dfcb; }
 
 .degree {
   font-style: italic;
@@ -431,55 +426,31 @@ a {
   font-size: 1.05em; }
 
 .site-inner {
-  color: #190127;
+  color: #bd39f1;
   padding-bottom: 20px; }
 
-@media (min-width: 960px) {
-  .content {
-    width: 66.265060241%;
-    float: left;
-    margin-right: 1.2048192771%; } }
+.wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 80%; }
+
+.content {
+  flex-grow: 3;
+  margin-right: 30px; }
 
 .sidebar {
-  color: #1b7169;
+  color: #0f8378;
   text-align: center; }
-  @media (min-width: 960px) {
-    .sidebar {
-      width: 32.5301204819%;
-      float: left;
-      margin-right: 1.2048192771%;
-      float: right;
-      margin-right: 0; } }
   .sidebar img, .sidebar svg {
     padding-top: 30px;
     max-width: 140px; }
 
-.ios-inner {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .ios-inner:after {
-    content: " ";
-    display: block;
-    clear: both; }
-
 .ios-description {
   padding-bottom: 40px; }
-  @media (min-width: 640px) {
-    .ios-description {
-      width: 32.5301204819%;
-      float: left;
-      margin-right: 1.2048192771%; } }
 
 .ios-image {
-  color: #1b7169; }
-  @media (min-width: 640px) {
-    .ios-image {
-      width: 57.8313253012%;
-      float: left;
-      margin-right: 1.2048192771%;
-      float: right;
-      margin-right: 0; } }
+  color: #0f8378; }
   .ios-image img, .ios-image svg {
     padding-top: 30px;
     max-width: 200px; }
@@ -488,52 +459,37 @@ a {
   width: 50%; }
 
 .web-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
   color: white;
   background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
   padding-left: 20px;
-  border: 1px solid #b3b3b3;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  border: 1px solid #99ffd5;
   margin-bottom: 20px;
   border-radius: 4px;
-  box-shadow: 2px 4px 4px #e6e6e6; }
-  .web-inner:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  box-shadow: 2px 3px 6px #066373; }
 
 .web-description {
-  padding-bottom: 40px; }
-  @media (min-width: 640px) {
-    .web-description {
-      width: 40.9638554217%;
-      float: left;
-      margin-right: 1.2048192771%; } }
+  padding-bottom: 40px;
+  margin-right: 20px;
+  flex-grow: 2; }
   .web-description h3 {
     font-size: 1.4em; }
   .web-description p {
     font-size: .85em; }
 
 .web-image {
-  color: #1b7169; }
-  @media (min-width: 640px) {
-    .web-image {
-      width: 57.8313253012%;
-      float: left;
-      margin-right: 1.2048192771%;
-      float: right;
-      margin-right: 0; } }
+  color: #0f8378;
+  text-align: right; }
   .web-image img, .web-image svg {
     padding: 0;
     margin-top: 10px;
     margin-left: 20px;
+    margin-right: 20px;
     max-width: 260px;
     border-radius: 4px; }
-    @media only screen and (max-width: 400px) {
-      .web-image img, .web-image svg {
-        width: 210px;
-        margin-left: 0; } }
 
 .hero .overlay {
   background: rgba(25, 1, 39, 0.85); }
@@ -541,7 +497,7 @@ a {
 .hero {
   text-align: center; }
   .hero p {
-    color: #2ec4b6;
+    color: #19dfcb;
     font-weight: 100; }
 
 .hero .wrap {
@@ -595,19 +551,19 @@ nav ul {
       display: block;
       padding: 20px 15px;
       text-align: center;
-      color: #ff9f1c;
+      color: #ff9500;
       text-decoration: none;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
       transition: all 0.4s ease-in-out; }
       nav ul li a:hover {
-        color: #2ec4b6;
+        color: #19dfcb;
         transition: all 0.3s ease-out; }
       @media (max-width: 760px) {
         nav ul li a {
           display: table;
           margin: 0;
           padding: 15px 2px;
-          color: #ff9f1c;
+          color: #ff9500;
           border-top: 1px solid rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
           text-shadow: none;
@@ -659,12 +615,12 @@ nav ul {
           text-shadow: none;
           transition: all 0.2s ease; }
           nav ul li ul li a:hover {
-            color: #2ec4b6;
+            color: #19dfcb;
             background: #424242;
             transition: all 0.5s ease; }
           @media (max-width: 760px) {
             nav ul li ul li a {
-              color: #ff9f1c;
+              color: #ff9500;
               padding-left: 20px;
               background: none; } }
 
@@ -677,7 +633,7 @@ MOBILE NAV STYLES
   padding: 20px 15px;
   background: linear-gradient(to bottom, #353535 0%, #262626 100%);
   position: absolute;
-  color: #ff9f1c;
+  color: #ff9500;
   text-decoration: none;
   top: 15px;
   right: 15px;
