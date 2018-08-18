@@ -424,12 +424,15 @@ a {
 #web-header h2:hover {
   text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de; }
 
-#edu-header, #ios-header {
+#edu-header,
+#ios-header {
   padding-bottom: 30px;
   color: #190127; }
-  #edu-header svg, #ios-header svg {
+  #edu-header svg,
+  #ios-header svg {
     padding-left: 20px; }
-  #edu-header p, #ios-header p {
+  #edu-header p,
+  #ios-header p {
     font-style: italic; }
 
 #school-wrapper {
@@ -455,7 +458,7 @@ a {
   box-shadow: 3px 4px 6px #ff9305; }
 
 #education {
-  line-height: .5; }
+  line-height: 0.5; }
   #education h3 {
     color: #19dfcb; }
 
@@ -483,16 +486,37 @@ a {
 .sidebar {
   color: #0f8378;
   text-align: center; }
-  .sidebar img, .sidebar svg {
+  .sidebar img,
+  .sidebar svg {
     padding-top: 30px;
     max-width: 140px; }
+
+.ios-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align: left;
+  color: white;
+  background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
+  padding-left: 20px;
+  border: 1px solid #99ffd5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px #066373;
+  transition: all linear 400ms; }
+
+.ios-inner:hover {
+  border: 1px solid #ff9100;
+  box-shadow: 3px 4px 6px #ff9305; }
 
 .ios-description {
   padding-bottom: 40px; }
 
 .ios-image {
   color: #0f8378; }
-  .ios-image img, .ios-image svg {
+  .ios-image img,
+  .ios-image svg {
+    padding-right: 10px;
     padding-top: 30px;
     max-width: 200px; }
 
@@ -524,18 +548,30 @@ a {
   .web-description h3 {
     font-size: 1.4em; }
   .web-description p {
-    font-size: .85em; }
+    font-size: 0.85em; }
 
 .web-image {
   color: #0f8378;
   text-align: right; }
-  .web-image img, .web-image svg {
+  .web-image img,
+  .web-image svg {
     padding: 0;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     max-width: 260px;
     border-radius: 4px; }
+
+.about-inner {
+  text-align: center;
+  color: white;
+  background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
+  padding-left: 20px;
+  border: 1px solid #99ffd5;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px #066373; }
 
 .hero .overlay {
   background: rgba(25, 1, 39, 0.85); }

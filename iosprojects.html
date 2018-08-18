@@ -23,48 +23,43 @@
 
 <body>
 
-	<header class="hero">
-		<div class="overlay">
-			<div class="site-branding">
-				<div class="logo">
-					<img src="../img/brand22.png" alt="Michael Kroth Portfolio">
+		<header class="hero">
+				<div class="overlay">
+					<div class="site-branding">
+						<div class="logo"><img src="../img/brand22.png" alt="Michael Kroth Portfolio">
+						</div>
+	
+						<nav class="site-nav">
+								<ul><li>
+										<a href="index.html">Web Projects</a>
+									</li>              
+									<li>
+										<a class="active" href="iosprojects.html">iOS Projects</a>
+									</li>
+									<li>
+											<a href="education.html">Education</a>
+										</li>
+									<li>
+										<a href="about.html">About</a>
+									</li>
+									<li>
+										<a href="#contact">Contact</a>
+									</li>
+									<li>
+										<a href="files/Michael_Kroth_Resume.pdf" download="files/Michael_Kroth_Resume.pdf">Resume</a>
+									</li>
+								</ul>
+						</nav>
+						<a class="mobile" href="#">&#9776;</a>       
+					</div>
+					<div class="header-wrap">
+						<h1>Michael Kroth</h1>
+						<h2>Front-End Developer | iOS Developer</h2>
+						<p>Dedicated and passionate software developer. Skilled in Swift (iOS), xCode, HTML5, CSS3, JavaScript, and Node.js.
+							</p>
+					</div>
 				</div>
-
-				<nav class="site-nav">
-					<ul><li>
-							<a href="index.html">Web Projects</a>
-						</li>
-						<li>
-							<a href="education.html">Education</a>
-						</li>
-						<li>
-							<a class="active" href="iosprojects.html">iOS Projects</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="#contact">Contact</a>
-						</li>
-						<li>
-							<a href="files/Michael_Kroth_Resume.pdf" download="files/Michael_Kroth_Resume.pdf">Resume</a>
-						</li>
-					</ul>
-			</nav>
-				<a class="mobile" href="#">&#9776;</a>
-			</div>
-			<div class="wrap">
-				<h1>Michael Kroth</h1>
-				<h3>Front-End Developer | iOS Developer</h3>
-				<p>Dedicated and passionate software developer. Skilled in Swift (iOS), xCode, HTML5, CSS3, JavaScript, and Node.js.
-				</p>
-			</div>
-		</div>
-	</header>
-
-
-	<main class="site-inner">
-			<section class="badges">
+				<section class="badges">
 					<ul>
 						<li><i class="fas fa-code fa-2x"></i></li>
 						<li><i class="fab fa-js fa-2x"></i></li>
@@ -75,13 +70,18 @@
 						<li><i class="fab fa-node fa-2x"></i></li>
 						<li><i class="fab fa-grunt fa-2x"></i></li>              
 					</ul>
-				</section>
+				</section>     
+			</header>
+
+
+	<main class="site-inner">
+
 		<!-- // Projects -->
 		<div class="wrap">
-			<div>
-				<h2 id="ios-header">iOS Projects<i class="fab fa-apple"></i>
-				</h2>
-			</div>
+			<div id="web-header">
+					<h2>iOS Projects <i class="fab fa-apple"></i>
+					</h2>
+				</div>
 			<!-- Project Details: copy this whole block to add more projects -->
 			<section class="ios-inner">
 				<div class="ios-description">
@@ -107,7 +107,7 @@
 				</div>
 			</section>
 			<!-- end of project item -->
-			<!-- <!-- <section class="ios-inner"> -->
+					<section class="ios-inner">
 				<div class="ios-description">
 					<div>
 						<h3>Find a Pet</h3>
