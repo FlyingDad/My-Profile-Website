@@ -566,12 +566,20 @@ a {
   text-align: center;
   color: white;
   background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
-  padding-left: 20px;
+  padding: 20px 35px;
   border: 1px solid #99ffd5;
   margin-top: 50px;
   margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 2px 3px 6px #066373; }
+
+hr.style14 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #5900ffaf, #ff00ffbd, #5900ffaf);
+  background-image: -moz-linear-gradient(left, #5900ffaf, #ff00ffbd, #5900ffaf);
+  background-image: -ms-linear-gradient(left, #5900ffaf, #ff00ffbd, #5900ffaf);
+  background-image: -o-linear-gradient(left, #5900ffaf, #ff00ffbd, #5900ffaf); }
 
 .hero .overlay {
   background: rgba(25, 1, 39, 0.85); }
