@@ -50,4 +50,20 @@
 	}
 }
 
+.badges {
 
+	background: linear-gradient(180deg, rgb(204, 0, 255) 0%, rgb(79, 54, 190) 10%, rgb(3, 3, 95) 30%, rgb(3, 3, 95) 70%,  rgb(79, 54, 190) 90%, rgb(204, 0, 255) 100%);
+	text-align: center;
+	ul {
+		margin-top: 0;
+		padding: 6px 0;
+		-webkit-padding-start: 0;
+		box-shadow: 0 6px 10px rgba(255, 0, 191, 0.3);
+	}
+	li {
+		
+		color: darken($orange, 1);
+		display: inline;
+		padding: 0 20px;
+	}
+}

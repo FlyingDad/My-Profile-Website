@@ -2,7 +2,8 @@
 	color: orange;
 	background: $blue;
 	text-align: center;
-	padding: 5px 0;
+	//padding: 5px 0;
+	border-top: 3px solid rgba(140, 0, 255, 0.438);
 	p {
 		font-weight: 100;
 		font-size: 12px;

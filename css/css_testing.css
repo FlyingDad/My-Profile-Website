@@ -1,0 +1,83 @@
+html, body {
+	background: black;
+	margin: 0;
+	color: white;
+	position: relative;
+}
+
+.wrapper {
+	padding-top: 100px;
+	/* padding-left: 100px; */
+}
+
+.site-inner {
+	position: relative;
+	/* margin-top: 100px; */
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+	width: 80%;
+	/* border: 1px solid green; */
+}
+
+:root {
+	--shadowH: 500px;
+}
+
+#shadow1{
+	background: rgba(247, 0, 255, 0.349);
+	position: absolute;
+	height: var(--shadowH);
+	width: 100%;
+	margin: 0 auto;
+	top: -15px;
+	left: 15px;
+	box-shadow: 1px -2px 5px #ff00ff;
+	border-radius: 2px
+}
+#shadow2{
+	background: rgba(5, 172, 194, 0.637);
+	position: absolute;
+	height: var(--shadowH);
+	width: 100%;
+	margin: 0 auto;
+	top: -10px;
+	left: 10px;
+	box-shadow: 1px -2px 5px #155db1;
+	border-radius: 2px
+}
+#shadow3{
+	background: rgba(34, 31, 212, 0.767);
+	position: absolute;
+	height: var(--shadowH);
+	width: 100%;
+	margin: 0 auto;
+	top: -5px;
+	left: 5px;
+	box-shadow: 1px -2px 5px #0f1786;
+	border-radius: 2px
+}
+
+#content {
+	position: absolute;
+	background: rgb(32, 31, 31);
+	z-index: 10;
+	height: var(--shadowH);
+	width: 100%;
+	top: 1px;
+	border-radius: 2px;	
+}
+
+#content p {
+	padding: 10px;
+}
+
+.wrap {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid pink;
+}
+
+
+
+

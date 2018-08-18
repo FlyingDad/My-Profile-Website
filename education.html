@@ -22,70 +22,70 @@
 </head>
 
 <body>
-	<aside class="site-container">
-		
+	<div class="site-container">
+		<header class="hero">
+      <div class="overlay">
+        <div class="site-branding">
+          <div class="logo"><img src="../img/brand22.png" alt="Michael Kroth Portfolio">
+          </div>
 
-			<header class="hero">
-					<div class="overlay">
-						<div class="site-branding">
-							<div class="logo"><img src="../img/brand22.png" alt="Michael Kroth Portfolio">
-							</div>
-		
-							<nav class="site-nav">
-									<ul>
-										<li>
-											<a href="index.html">Home</a>
-										</li>
-										<li>
-											<a class="active" href="education.html">Education</a>
-										</li>
-										<li>
-											<a href="iosprojects.html">iOS Projects</a>
-										</li>
-										<li>
-											<a href="webprojects.html">Web Projects</a>
-										</li>
-										<li>
-											<a href="#contact">Contact</a>
-										</li>
-										<li>
-											<a href="files/Michael_Kroth_Resume.pdf" download="files/Michael_Kroth_Resume.pdf">Resume</a>
-										</li>
-									</ul>
-							</nav>
-							<a class="mobile" href="#">&#9776;</a>       
-						</div>
-						<div class="wrap">
-							<h1>Michael Kroth</h1>
-							<h3>Front-End Developer | iOS Developer</h3>
-							<p>Dedicated and passionate software developer. Skilled in Swift (iOS), xCode, HTML5, CSS3, JavaScript, and Node.js.
-								</p>
-						</div>
-					</div>     
-				</header>
+          <nav class="site-nav">
+              <ul><li>
+                  <a href="index.html">Web Projects</a>
+                </li>
+                <li>
+                  <a class="active" href="education.html">Education</a>
+                </li>
+                <li>
+                  <a href="iosprojects.html">iOS Projects</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="files/Michael_Kroth_Resume.pdf" download="files/Michael_Kroth_Resume.pdf">Resume</a>
+                </li>
+              </ul>
+          </nav>
+          <a class="mobile" href="#">&#9776;</a>       
+        </div>
+        <div class="header-wrap">
+          <h1>Michael Kroth</h1>
+          <h2>Front-End Developer | iOS Developer</h2>
+          <p>Dedicated and passionate software developer. Skilled in Swift (iOS), xCode, HTML5, CSS3, JavaScript, and Node.js.
+            </p>
+        </div>
+			</div>
+			<section class="badges">
+				<ul>
+					<li><i class="fas fa-code fa-2x"></i></li>
+					<li><i class="fab fa-js fa-2x"></i></li>
+					<li><i class="fab fa-apple fa-2x"></i></li>
+					<li><i class="fab fa-css3 fa-2x"></i></li>
+					<li><i class="fab fa-sass fa-2x"></i></li>
+					<li><i class="fab fa-html5 fa-2x"></i></li>
+					<li><i class="fab fa-node fa-2x"></i></li>
+					<li><i class="fab fa-grunt fa-2x"></i></li>              
+				</ul>
+			</section>     
+    </header>
 
 		<main id="education" class="site-inner">
-				<section class="badges">
-            <ul>
-              <li><i class="fas fa-code fa-2x"></i></li>
-              <li><i class="fab fa-js fa-2x"></i></li>
-              <li><i class="fab fa-apple fa-2x"></i></li>
-              <li><i class="fab fa-css3 fa-2x"></i></li>
-              <li><i class="fab fa-sass fa-2x"></i></li>
-              <li><i class="fab fa-html5 fa-2x"></i></li>
-              <li><i class="fab fa-node fa-2x"></i></li>
-              <li><i class="fab fa-grunt fa-2x"></i></li>              
-            </ul>
-          </section>
+				
 			<section class="wrap">
 
 				<div class="content">
-					<h2 id="edu-header">Education <i class="fas fa-graduation-cap"></i>
-					</h2>
+					<div id="web-header">
+						<h2>Education <i class="fas fa-graduation-cap"></i></h2>
+					</div>
+					<section id="school-wrapper">
 					<!-- school -->
-					<div>
+					<div class="school">
 						<h3>Udacity</h3>
-						<p>2018 - Present</p>
+						<p>2018</p>
 						<p class="degree">Grow with Google Front-End Developer Scholarship</p>
 					</div>
 					<!-- Add as many paragraphs as you need. -->
@@ -93,42 +93,33 @@
 						<p></p>
 					</div>
 					<!-- next school -->
-					<div>
+					<div class="school ">
 						<h3>Udacity</h3>
 						<p>2016 - 2017</p>
 						<p class="degree">iOS Nanodegree</p>
 					</div>
 
-					<!-- Add as many paragraphs as you need. -->
-					<div>
-						<p></p>
-					</div>
-					<!-- School details: copy this whole block to add more schools. -->
-
+					<div class="school">
 					<h3>Colorado Technical University</h3>
 					<p>2009 - 2012</p>
 					<p class="degree">BSBA Information Technology</p>
+					<p>GPA: 3.89 - Graduated Summa Cum Laude</p>
+				  </div>
 
-					<!-- Add as many paragraphs as you need. -->
-					<div>
-						<p>GPA: 3.89 - Graduated Summa Cum Laude</p>
-					</div>
-
-					<div>
+					<div class="school">
 						<h3>U.S. Navy</h3>
 						<p>1983 - 2003</p>
 						<p class="degree">Electronics, computer programming, data and display systems</p>
 					</div>
 
-					<!-- Add as many paragraphs as you need. -->
 					<!-- End of school details. -->
-				</div>
+				</section>
 
-				<aside class="sidebar">
+				<!-- <aside class="sidebar">
 					<div>
 						<img class="edu-img" src="img/statistics.png" alt="statistics">
 					</div>
-				</aside>
+				</aside> -->
 			</section>
 		</main>
 

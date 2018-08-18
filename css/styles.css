@@ -341,7 +341,7 @@ a {
   color: orange;
   background: #190127;
   text-align: center;
-  padding: 5px 0; }
+  border-top: 3px solid rgba(140, 0, 255, 0.438); }
   .site-footer p {
     font-weight: 100;
     font-size: 12px;
@@ -395,17 +395,34 @@ a {
     margin-top: 0; }
 
 .badges {
-  background: linear-gradient(180deg, #ff00c8 0%, #4f36be 20%, #03035f 80%);
+  background: linear-gradient(180deg, #cc00ff 0%, #4f36be 10%, #03035f 30%, #03035f 70%, #4f36be 90%, #cc00ff 100%);
   text-align: center; }
   .badges ul {
     margin-top: 0;
-    padding-top: 8px;
+    padding: 6px 0;
     -webkit-padding-start: 0;
     box-shadow: 0 6px 10px rgba(255, 0, 191, 0.3); }
   .badges li {
     color: #fa9200;
     display: inline;
     padding: 0 20px; }
+
+#web-header h2 {
+  color: white;
+  text-decoration: normal;
+  margin-bottom: 0;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+
+#web-header h2:hover {
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de; }
 
 #edu-header, #ios-header {
   padding-bottom: 30px;
@@ -414,6 +431,28 @@ a {
     padding-left: 20px; }
   #edu-header p, #ios-header p {
     font-style: italic; }
+
+#school-wrapper {
+  margin-top: 50px; }
+
+.school {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: left;
+  text-align: center;
+  color: white;
+  background: linear-gradient(180deg, #190127 0%, #032730 70%, #032730 100%);
+  padding-left: 20px;
+  border: 1px solid #99ffd5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px #066373;
+  transition: all linear 400ms; }
+
+.school:hover {
+  border: 1px solid #ff9100;
+  box-shadow: 3px 4px 6px #ff9305; }
 
 #education {
   line-height: .5; }
@@ -432,8 +471,10 @@ a {
 .wrap {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
   margin: 0 auto;
-  width: 80%; }
+  width: 80%;
+  max-width: 800px; }
 
 .content {
   flex-grow: 3;
@@ -469,7 +510,12 @@ a {
   border: 1px solid #99ffd5;
   margin-bottom: 20px;
   border-radius: 4px;
-  box-shadow: 2px 3px 6px #066373; }
+  box-shadow: 2px 3px 6px #066373;
+  transition: all linear 400ms; }
+
+.web-inner:hover {
+  border: 1px solid #ff9100;
+  box-shadow: 3px 4px 6px #ff9305; }
 
 .web-description {
   padding-bottom: 40px;
